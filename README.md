@@ -14,6 +14,12 @@ All you have to do is to defines routes, according to your URLs, and specify con
 Installation
 ----------------------------------------
 
+* Simply download the lastest requestRouter.php package ([zip](http://github.com/mathieulesniak/PHPRouter/zipball/master)) or [tarball](http://github.com/mathieulesniak/PHPRouter/tarball/master)) and put requestRouter.php somewhere accessible in your application.
+* Create an index.php and use .htaccess to tell Apache to route each URLs through index.php (see .htaccess-sample file)
+
+
+
+
 How to use
 ----------------------------------------
 
