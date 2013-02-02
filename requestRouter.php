@@ -115,7 +115,7 @@ class RequestRoute
 	const PARAMETER_TYPE_NUMBER	= '\d+';
 
 	const ROUTE_DEFAULT_CONTROLLER	= 'home';
-	const ROUTE_DEFAULT_METHOD		= 'index';
+	const ROUTE_DEFAULT_METHOD	= 'index';
 
 	function __construct($url, $requestUri, $routeTarget, $parametersDefinitions)
 	{
