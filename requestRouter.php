@@ -102,18 +102,19 @@ class RequestRouter
 
 class RequestRoute
 {
-	private $url;
-	private $parametersDefinitions;
+	
 	public $parametersValues;
-
 	public $isMatched;
 	public $controller;
 	public $method;
+	
+	private $url;
+	private $parametersDefinitions;
 
-	const PARAMETER_TYPE_ALPHA 	= '[\d\w\s_-]+';
-	const PARAMETER_TYPE_NUMBER = '\d+';
+	const PARAMETER_TYPE_ALPHA	= '[\d\w\s_-]+';
+	const PARAMETER_TYPE_NUMBER	= '\d+';
 
-	const ROUTE_DEFAULT_CONTROLLER 	= 'home';
+	const ROUTE_DEFAULT_CONTROLLER	= 'home';
 	const ROUTE_DEFAULT_METHOD		= 'index';
 
 	function __construct($url, $requestUri, $routeTarget, $parametersDefinitions)
