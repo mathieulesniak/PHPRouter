@@ -139,7 +139,7 @@ class RequestRoute
 		}
 	
 		// requestUri is matching pattern, set as matched route
-		if ( preg_match('|' . $patternMatching . '|', $requestUri, $matching) )
+		if ( preg_match('#' . $patternMatching . '#', $requestUri, $matching) )
 		{
 			unset($matching[0]);
 			$this->parametersValues = array_combine($routeParametersNames, $matching);
